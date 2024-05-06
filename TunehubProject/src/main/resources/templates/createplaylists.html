@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>createplaylist</title>
+</head>
+<body>
+	<form action="addplaylist" method="post">
+    <label>Playlist</label>
+    <input type="text" name="name">
+    <br>
+    <div th:each="song : ${songs}">
+        <input type="checkbox" th:name="songs" th:value="${song.id}">
+        <label th:text="${song.name}"></label>
+    </div>
+    <input type="submit" value="Add Playlist"> <!-- Corrected the missing = sign -->
+</form>
+</body>
+</html>

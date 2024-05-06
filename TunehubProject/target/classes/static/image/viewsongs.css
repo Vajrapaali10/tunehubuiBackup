@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #4169E1; /* Royal Blue */
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f0f8ff; /* Light Blue */
+}
+
+tbody tr:hover {
+    background-color: #1E90FF; /* Dodger Blue on hover */
+}
+
+audio {
+    width: 100%;
+}
